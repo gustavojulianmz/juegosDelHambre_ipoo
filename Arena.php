@@ -1,0 +1,82 @@
+<?php
+class Arena{
+    //LA CLASE ARENA REPRESENTA EL LUGAR DONDE SE HACEN LOS DUELOS
+
+
+    private $id;
+    private $nombre;
+    private $dificultad;
+    private $capacidadPublico;
+    private $clima; //nnormal, lluvia, tormenta, niebla.
+
+
+
+
+    public function __construct($id, $nombre, $dificultad, $capacidadPublico, $clima){
+        $this->id = $id;
+        $this->nombre = $nombre;
+        $this->dificultad = $dificultad;
+        $this->capacidadPublico = $capacidadPublico;
+        $this->clima = $clima;
+
+
+    }
+
+
+//GETTERS
+public function getId() {
+    return $this->id;
+}
+
+
+public function getNombre() {
+    return $this->nombre;
+}
+
+
+public function getDificultad() {
+    return $this->dificultad;
+}
+
+
+public function getCapacidadPublico() {
+    return $this->capacidadPublico;
+}
+
+
+public function getClima() {
+    return $this->clima;
+}
+
+
+// SETTERS
+public function setId($id) {
+    $this->id = $id;
+}
+
+
+public function setNombre($nombre) {
+    $this->nombre = $nombre;
+}
+
+
+public function setDificultad($dificultad) {
+    $this->dificultad = $dificultad;
+}
+
+
+public function setCapacidadPublico($capacidadPublico) {
+    $this->capacidadPublico = $capacidadPublico;
+}
+
+
+public function setClima($clima) {
+    $this->clima = $clima;
+}
+
+
+
+
+
+
+}
